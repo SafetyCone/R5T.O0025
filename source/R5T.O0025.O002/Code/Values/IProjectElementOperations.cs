@@ -35,5 +35,12 @@ namespace R5T.O0025.O002
                 projectElement,
                 Instances.WarningSets.DefaultIgnoredWarnings);
         }
+
+        public void Ensure_HasNoWarn_ElseSetIgnoredWarningsDefault(IProjectElement projectElement)
+        {
+            Instances.ProjectElementOperator.Ensure_Has_NoWarn_ElseSetNoWarnValues(
+                projectElement,
+                Instances.WarningSets.DefaultIgnoredWarnings);
+        }
     }
 }
